@@ -1,7 +1,7 @@
 <template>
   
   <main>
-    
+    <div class="">dummy</div>
   </main>
 </template>
 
@@ -10,7 +10,7 @@ export default {
     name: 'resources',
     data (){
       return{
-             
+           resources:[]  
         }
     },
     mounted(){
@@ -21,7 +21,8 @@ export default {
         const res=await fetch("https://dummyjson.com/products")
         const json=await res.json()
         console.log(json);
-
+        this.resources.push(json)
+       l
       }
     }
 
